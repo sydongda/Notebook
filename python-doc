@@ -1,5 +1,5 @@
-# Notebook
-Convert a timestamp to a datetime object
+# Python: Convert Datetime to Timestamp and Back Again
+#Convert a timestamp to a datetime object
 
 from datetime import datetime
 
@@ -7,7 +7,7 @@ print datetime.fromtimestamp(1346236702)
 
 #2012-08-29 11:38:22
 
-Convert a datetime object to a timestamp
+#Convert a datetime object to a timestamp
 
 from datetime import datetime
 import time

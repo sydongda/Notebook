@@ -1,0 +1,19 @@
+# Notebook
+Convert a timestamp to a datetime object
+
+from datetime import datetime
+
+print datetime.fromtimestamp(1346236702)
+
+#2012-08-29 11:38:22
+
+Convert a datetime object to a timestamp
+
+from datetime import datetime
+import time
+
+dt = datetime.fromtimestamp(1346236702)
+
+print time.mktime(dt.timetuple())
+
+#1346236702.0

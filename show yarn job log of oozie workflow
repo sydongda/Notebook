@@ -1,0 +1,15 @@
+kinit -kt <user>
+ 
+export OOZIE_URL=<oozie url>
+ 
+# get workflow’s id
+oozie jobs -len <num of jobs>
+ 
+# get yarn job id
+oozie job -info  <oozie job id>
+
+# get yarn application id
+yarn application -list -appStates ALL | grep <external job id>
+ 
+# show yarn app log
+yarn logs  -applicationId <yarn app id>

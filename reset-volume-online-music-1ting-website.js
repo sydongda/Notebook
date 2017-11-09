@@ -1,9 +1,8 @@
 timeout = 2000;
 function adjuest_volume_ting() {
     setTimeout(function() {
-        var bgp = $("#volume-crontrol").css("background-position");
-        var min = bgp.split("-")[0];
-        var v = min.substring(0, min.length - 3);
+        var position = $("#volume-crontrol").css("background-position");
+        var v = position.substring(0, position.indexOf("px"));
         console.log(v +"," + timeout);
         timeout = 2000;
         if (v > 10) { 

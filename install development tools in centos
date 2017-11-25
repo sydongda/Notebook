@@ -1,1 +1,3 @@
 
+sudo yum update
+sudo yum group install "Development Tools"

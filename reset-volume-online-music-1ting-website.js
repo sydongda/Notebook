@@ -1,3 +1,29 @@
+/*
+save as manifest.json, and js save to reset-ting.js in same folder, u can load as a chrome extension plugin.
+{
+
+ "manifest_version": 2,
+ "name": "1ting-reset",
+"description": "reset voice volume",
+"version": "1.0",
+"content_scripts": [
+ {
+	//Set your address you want the extension will work in mataches!!! 
+ "matches": ["http://www.1ting.com/*", "https://www.1ting.com/*"],
+  "js": ["reset-ting.js"],
+  "run_at": "document_end"
+ }
+],	
+"permissions": [
+			  "activeTab",
+"https://ajax.googleapis.com/"
+			 ],
+ "browser_action": {
+ }
+
+}
+
+*/
 timeout = 2000;
 function adjuest_volume_ting() {
     setTimeout(function() {

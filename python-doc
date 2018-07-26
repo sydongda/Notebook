@@ -17,3 +17,16 @@ dt = datetime.fromtimestamp(1346236702)
 print time.mktime(dt.timetuple())
 
 #1346236702.0
+
+
+#string2utctimestamp:
+
+import calendar
+import time
+import sys
+ 
+time_tuple = time.strptime(sys.argv[1] +"UTC", "%Y%m%d%H%Z")
+t = calendar.timegm(time_tuple)
+
+print time.ctime(t)
+print str(t) + "000"

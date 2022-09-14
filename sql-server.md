@@ -8,3 +8,18 @@ from sys.schemas s
         on u.uid = s.principal_id
 order by s.name
 ```
+### show current user's permission of a table
+```SQL
+EXEC sp_table_privileges  @table_name = '<table name>';
+```
+
+###show sql history
+```SQL
+SELECT *
+FROM sys.dm_pdw_exec_requests
+--WHERE status not in ('Completed','Failed','Cancelled')
+where
+   session_id <> session_id()
+   and command like '%<table name>%'
+ORDER BY submit_time DESC;
+```

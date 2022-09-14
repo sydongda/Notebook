@@ -13,7 +13,7 @@ order by s.name
 EXEC sp_table_privileges  @table_name = '<table name>';
 ```
 
-###show sql history
+### show sql history
 ```SQL
 SELECT *
 FROM sys.dm_pdw_exec_requests

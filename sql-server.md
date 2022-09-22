@@ -23,3 +23,8 @@ where
    and command like '%<table name>%'
 ORDER BY submit_time DESC;
 ```
+
+### show running sessions
+```SQL
+SELECT * FROM sys.dm_pdw_exec_sessions where status <> 'Closed' and session_id <> session_id();
+```

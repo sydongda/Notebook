@@ -30,4 +30,6 @@ SELECT * FROM sys.dm_pdw_exec_sessions where status <> 'Closed' and session_id <
 ```
 
 使用 DMV 监视 Azure Synapse Analytics 专用 SQL 池工作负载
+```
 https://learn.microsoft.com/zh-cn/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext
+```

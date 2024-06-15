@@ -1,3 +1,0 @@
-useradd -m -s /bin/bash -G wheel yudshen
-passwd yudshen
->>I2p8So0Ex7HCX6w9mi
